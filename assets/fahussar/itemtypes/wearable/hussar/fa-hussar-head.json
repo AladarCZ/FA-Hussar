@@ -1,0 +1,191 @@
+{
+	"code": "fa-hussar-head",
+	"class": "ItemWearable",
+	"heldTpIdleAnimation": "holdunderarm",
+	"variantgroups": [
+		{ "code": "style",  "states": ["sziszak","maskedsziszak", "kapalin", "maskedkapalin"]},
+		{ "code": "metalhead",  "states": ["iron", "meteoriciron", "steel"]}
+	],
+	"allowedVariants": [
+		"*"
+	],
+	"skipVariants": [
+	],
+	"shapeByType": 
+	{
+		"fa-hussar-head-sziszak-*": { "base": "entity/armor/hussar/hussarsziszakhead" },
+		"fa-hussar-head-maskedsziszak-*": { "base": "entity/armor/hussar/hussarmaskedsziszakhead" },
+		"fa-hussar-head-kapalin-*": { "base": "entity/armor/hussar/hussarkapalinhead" },
+		"fa-hussar-head-maskedkapalin-*": { "base": "entity/armor/hussar/hussarmaskedkapalinhead" },
+	},
+	"texturesByType": {
+		"fa-hussar-head-*": { 
+			"seraph": { "base": "game:block/transparent" },
+			"hussarhead": { "base": "armor/entity/hussar_{metalhead}" },
+				}
+	},
+	"storageFlags": 128,
+	"maxstacksize": 4,
+	"attributes": {
+		"visibleDamageEffect": true,
+		"wearableAttachment": true,
+		"clothescategoryByType": {
+			"*": "armorhead"
+		},
+		"disableElementsByType": {
+			"*masked*": ["hidehat", "Hood", "hoodupperover", "Hair tile upper part", "ponytailhigh", "ponytaillow", "Hair", "hair-uncovered", "hidefacialhair", "sidehigh", "sidelow", "bangs"],
+			"*-sziszak*": ["hidehat", "Hood", "hoodupperover", "Hair tile upper part", "ponytailhigh", "ponytaillow", "Hair", "hair-uncovered", "sidehigh", "sidelow"],
+			"*-kapalin*": ["hidehat", "Hood", "hoodupperover", "Hair tile upper part", "ponytailhigh", "ponytaillow", "Hair", "hair-uncovered", "sidehigh", "sidelow"]
+		},
+		"defaultProtLoss": {
+			perTierRelativeProtectionLoss: [0.03, 0.15],
+			perTierFlatDamageReductionLoss: [0.1, 0.2]
+		},
+		"protectionModifiersByType": {
+			"*-maskedsziszak-steel*": {
+				relativeProtection: 0.97,
+				flatDamageReduction: 1.8,
+				highDamageTierResistant: true,
+				protectionTier: 4
+			},
+			"*-sziszak-steel*": {
+				relativeProtection: 0.96,
+				flatDamageReduction: 1.7,
+				highDamageTierResistant: true,
+				protectionTier: 4
+			},
+			"*-maskedsziszak-meteoriciron*": {
+				relativeProtection: 0.962,
+				flatDamageReduction: 1.72,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+			"*-sziszak-meteoriciron*": {
+				relativeProtection: 0.952,
+				flatDamageReduction: 1.62,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+			"*-maskedsziszak-iron*": {
+				relativeProtection: 0.96,
+				flatDamageReduction: 1.7,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+			"*-sziszak-iron*": {
+				relativeProtection: 0.95,
+				flatDamageReduction: 1.6,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+			"*-maskedkapalin-steel*": {
+				relativeProtection: 0.84,
+				flatDamageReduction: 1.3,
+				highDamageTierResistant: true,
+				protectionTier: 4
+			},
+			"*-kapalin-steel*": {
+				relativeProtection: 0.74,
+				flatDamageReduction: 1.2,
+				highDamageTierResistant: true,
+				protectionTier: 4
+			},
+			"*-maskedkapalin-meteoriciron*": {
+				relativeProtection: 0.825,
+				flatDamageReduction: 1.22,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+			"*-kapalin-meteoriciron*": {
+				relativeProtection: 0.725,
+				flatDamageReduction: 1.12,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+			"*-maskedkapalin-iron*": {
+				relativeProtection: 0.82,
+				flatDamageReduction: 1.2,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+			"*-kapalin-iron*": {
+				relativeProtection: 0.72,
+				flatDamageReduction: 1.1,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+		},
+		"statModifiersByType": {
+			"*-sziszak*": {
+				rangedWeaponsAcc: -0.05,
+				rangedWeaponsSpeed: -0.05,
+				walkSpeed: -0.06,
+				healingeffectivness: -0.26,
+				hungerrate: 0.15
+			},	
+			"*-maskedsziszak*": {
+				rangedWeaponsAcc: -0.10,
+				rangedWeaponsSpeed: -0.20,
+				walkSpeed: -0.07,
+				healingeffectivness: -0.26,
+				hungerrate: 0.15
+			},			
+			"*-kapalin*": {
+				rangedWeaponsAcc: -0.01,
+				rangedWeaponsSpeed: -0.03,
+				walkSpeed: -0.02,
+				healingeffectivness: -0.13,
+				hungerrate: 0.1
+			},
+			"*-maskedkapalin*": {
+				rangedWeaponsAcc: -0.04,
+				rangedWeaponsSpeed: -0.10,
+				walkSpeed: -0.03,
+				healingeffectivness: -0.13,
+				hungerrate: 0.1
+			},
+		}
+	},
+	"creativeinventory": { "general": ["*"], "items": ["*"], "forgottenarmoryhussar": ["*"] },
+	"renderAlphaTest": 0.25,
+	"durabilityByType": {
+		"*sziszak-iron*": 1900,
+		"*sziszak*-meteoriciron*": 2500,
+		"*sziszak*-steel*": 5200,
+		"*kapalin*-iron*": 1100,
+		"*kapalin*-meteoriciron*": 1300,
+		"*kapalin*-steel*": 2300,
+	},
+	"fpHandTransformByType": {
+		"*": {
+			translation: { x: 0.4, y: -1.9, z: -0.5 },
+			rotation: { x: 163, y: -111, z: -180 },
+			origin: { x: 0.5, y: 1.7, z: 0.5 },
+			scale: 2.15
+		},
+	},
+	"tpHandTransformByType": {
+		"*": {
+			translation: { x: -0.82, y: -2.2, z: -0.5 },
+			rotation: { x: 18, y: 169, z: 30 },
+			origin: { x: 0.5, y: 1.7, z: 0.5 },
+			scale: 0.64
+		}
+	},
+	"guiTransformByType": {
+		"*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -26, y: -46, z: -180 },
+			origin: { x: 0.6, y: 1.72, z: 0.5 },
+			scale: 2
+		},
+	},
+	"groundTransformByType": {
+		"*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: 0, y: 0, z: 0 },
+			origin: { x: 0.34, y: 1.71, z: 0.5 },
+			scale: 3.1
+		},
+	}
+}

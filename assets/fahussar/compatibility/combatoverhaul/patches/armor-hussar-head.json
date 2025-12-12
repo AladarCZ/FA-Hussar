@@ -1,0 +1,194 @@
+[
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-head",
+    "op": "addmerge",
+    "path": "/behaviors",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": [
+      {
+        "name": "CombatOverhaul:Armor",
+        "propertiesByType": {
+          "fa-hussar-head-sziszak-steel*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 6,
+              "SlashingAttack": 6,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": 0,
+              "steadyAim": -0.05,
+              "healingeffectivness": -0.05,
+              "hungerrate": 0.09
+            }
+          },
+          "fa-hussar-head-maskedsziszak-steel*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 7,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": 0,
+              "steadyAim": -0.15,
+              "healingeffectivness": -0.05,
+              "hungerrate": 0.15
+            }
+          },
+          "fa-hussar-head-sziszak-*iron*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 5
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": 0,
+              "steadyAim": -0.05,
+              "healingeffectivness": -0.05,
+              "hungerrate": 0.09
+            }
+          },
+          "fa-hussar-head-maskedsziszak-*iron*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 6,
+              "SlashingAttack": 6,
+              "BluntAttack": 5
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": 0,
+              "steadyAim": -0.15,
+              "healingeffectivness": -0.05,
+              "hungerrate": 0.15
+            }
+          },
+          "fa-hussar-head-kapalin-steel*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head","Neck","Face"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 6,
+              "BluntAttack": 5
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": 0,
+              "steadyAim": -0.03,
+              "healingeffectivness": -0.05,
+              "hungerrate": 0.05
+            }
+          },
+          "fa-hussar-head-maskedkapalin-steel*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head","Neck","Face"],
+            "Resists": {
+              "PiercingAttack": 6,
+              "SlashingAttack": 7,
+              "BluntAttack": 5
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": 0,
+              "steadyAim": -0.10,
+              "healingeffectivness": -0.05,
+              "hungerrate": 0.10
+            }
+          },
+          "fa-hussar-head-kapalin-*iron*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 4,
+              "SlashingAttack": 5,
+              "BluntAttack": 4
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": 0,
+              "steadyAim": -0.03,
+              "healingeffectivness": -0.05,
+              "hungerrate": 0.05
+            }
+          },
+          "fa-hussar-head-maskedkapalin-*iron*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 6,
+              "BluntAttack": 4
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": 0,
+              "steadyAim": -0.10,
+              "healingeffectivness": -0.05,
+              "hungerrate": 0.10
+            }
+          }
+        },
+      }
+    ]
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-head",
+    "op": "replace",
+    "path": "/durabilityByType",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": {
+        "fa-hussar-head-*sziszak-steel*": 10000,
+        "fa-hussar-head-*sziszak-meteoriciron*": 5000,
+        "fa-hussar-head-*sziszak-iron*": 4000,
+        "fa-hussar-head-*kapalin-steel*": 4800,
+        "fa-hussar-head-*kapalin-meteoriciron*": 2500,
+        "fa-hussar-head-*kapalin-iron*": 2200
+    }
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-head",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/protectionModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-head",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/statModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-head",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/class",
+    "value": "CombatOverhaul:WearableArmor"
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-head",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "add",
+    "path": "/attributes/materialCountByType",
+    "value": { "*-head-*": 8 }
+  },  
+
+]

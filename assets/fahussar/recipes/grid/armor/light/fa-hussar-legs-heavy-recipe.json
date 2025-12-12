@@ -1,0 +1,116 @@
+[
+	{
+		ingredientPattern: "DBD,FEF,IGI",
+		recipeGroup: 1,
+		ingredients: {
+			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
+			},
+			"D": { type: "item", code: "game:metalchain-steel"
+			},
+			"E": { type: "item", code: "game:armor-legs-brigandine-steel"
+			},
+			"F": { type: "item", code: "game:metalnailsandstrips-gold", quantity: 4
+			},
+			"G": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 100
+			},
+			"I": { type: "item", code: "game:leather-sturdy-plain", quantity: 4
+			}
+		},
+		width: 3,
+		height: 3,
+		name: "hussar steel plate legs",
+		output: { type: "item", code: "fa-hussar-legs-steel-light-none"
+		}
+	},
+	{
+		ingredientPattern: "DBD,FEF,IGI",
+		recipeGroup: 1,
+		ingredients: {
+			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
+			},
+			"D": { type: "item", code: "game:metalchain-meteoriciron"
+			},
+			"E": { type: "item", code: "game:armor-legs-brigandine-meteoriciron"
+			},
+			"F": { type: "item", code: "game:metalnailsandstrips-cupronickel", quantity: 4
+			},
+			"G": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 100
+			},
+			"I": { type: "item", code: "game:leather-normal-plain", quantity: 4
+			}
+		},
+		width: 3,
+		height: 3,
+		name: "hussar meteoriciron plate legs",
+		output: { type: "item", code: "fa-hussar-legs-meteoriciron-light-none"
+		}
+	},
+	{
+		ingredientPattern: "DBD,FEF,IGI",
+		recipeGroup: 1,
+		ingredients: {
+			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
+			},
+			"D": { type: "item", code: "game:metalchain-iron"
+			},
+			"E": { type: "item", code: "game:armor-legs-brigandine-iron"
+			},
+			"F": { type: "item", code: "game:metalnailsandstrips-blackbronze", quantity: 4
+			},
+			"G": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 100
+			},
+			"I": { type: "item", code: "game:leather-normal-plain", quantity: 4
+			}
+		},
+		width: 3,
+		height: 3,
+		name: "hussar iron plate legs",
+		output: { type: "item", code: "fa-hussar-legs-iron-light-none"
+		}
+	},
+	{
+		ingredientPattern: "_I_,DBD,FGF",
+		recipeGroup: 1,
+		ingredients: {
+			"B": { type: "item", code: "fa-hussar-legs-*-light-none",
+						name: "metal", allowedVariants: [
+					"steel",
+					"meteoriciron",
+					"iron"
+				]
+			},
+			"D": { type: "item", code: "game:cloth-*", name: "color", 
+					allowedVariants: [
+					"plain",
+					"blue",
+					"red",
+					"yellow",
+					"green",
+					"purple",
+					"pink",
+					"orange",
+					"brown",
+					"gray",
+					"black",
+					"white"
+				], quantity: 6
+			},
+			"F": { type: "item", code: "game:metalnailsandstrips-*",
+						name: "metal", allowedVariants: [
+					"steel",
+					"meteoriciron",
+					"iron"
+				], quantity: 2
+			},
+			"G": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 100
+			},
+			"I": { type: "item", code: "game:shears-*", isTool: true, toolDurabilityCost: 100
+			},
+		},
+		width: 3,
+		height: 3,
+		name: "hussar iron plate legs",
+		output: { type: "item", code: "fa-hussar-legs-{metal}-light-{color}"
+		}
+	},
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-legs",
+    "op": "addmerge",
+    "path": "/behaviors",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": [
+      {
+        "name": "CombatOverhaul:Armor",
+        "propertiesByType": {
+          "fa-hussar-legs-steel-heavy-*": {
+            "Layers": ["Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 7,
+              "BluntAttack": 7
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.03,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.05
+            }
+          },
+          "fa-hussar-legs-*iron-heavy-*": {
+            "Layers": ["Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 6,
+              "SlashingAttack": 6,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.03,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.05
+            },
+          },
+          "fa-hussar-legs-steel-light-*": {
+            "Layers": ["Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 6,
+              "SlashingAttack": 7,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.05
+            }
+          },
+          "fa-hussar-legs-*iron-light-*": {
+            "Layers": ["Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 6,
+              "BluntAttack": 5
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.05
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-legs",
+    "op": "replace",
+    "path": "/durabilityByType",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": {
+        "fa-hussar-legs-steel-heavy-*": 20000,
+        "fa-hussar-legs-meteoriciron-heavy-*": 10000,
+        "fa-hussar-legs-iron-heavy-*": 8000,
+        "fa-hussar-legs-steel-light-*": 9500,
+        "fa-hussar-legs-meteoriciron-light-*": 5500,
+        "fa-hussar-legs-iron-light-*": 4500,
+    }
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-legs",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/protectionModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-legs",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/statModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-legs",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/class",
+    "value": "CombatOverhaul:WearableArmor"
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-legs",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "add",
+    "path": "/attributes/materialCountByType",
+    "value": { "*-legs-*": 8 }
+  },  
+
+]

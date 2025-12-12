@@ -1,0 +1,122 @@
+[
+	{
+		ingredientPattern: "BL,P_",
+		recipeGroup: 2,
+		ingredients: {
+			"B": { type: "item", code: "fa-hussar-head-sziszak-*",  
+						name: "metal", allowedVariants: [
+					"steel",
+					"meteoriciron",
+					"iron"
+				]
+			},
+			"P": { type: "item", code: "game:metalplate-*",
+						name: "metal", allowedVariants: [
+					"steel",
+					"meteoriciron",
+					"iron"
+				]
+			},
+			"L": { type: "item", code: "game:leather-normal-plain"
+			}
+		},
+		width: 2,
+		height: 2,
+		shapeless: true,
+		copyAttributesFrom: 'B',
+		averageDurability: false,
+		name: "greenwich steel plate armet repair",
+		output: { type: "item", code: "fa-hussar-head-sziszak-{metal}"
+		}
+	},
+	{
+		ingredientPattern: "BL,P_",
+		recipeGroup: 2,
+		ingredients: {
+			"B": { type: "item", code: "fa-hussar-head-maskedsziszak-*",  
+						name: "metal", allowedVariants: [
+					"steel",
+					"meteoriciron",
+					"iron"
+				]
+			},
+			"P": { type: "item", code: "game:metalplate-*",
+						name: "metal", allowedVariants: [
+					"steel",
+					"meteoriciron",
+					"iron"
+				]
+			},
+			"L": { type: "item", code: "game:leather-normal-plain"
+			}
+		},
+		width: 2,
+		height: 2,
+		shapeless: true,
+		copyAttributesFrom: 'B',
+		averageDurability: false,
+		name: "greenwich steel plate armet repair",
+		output: { type: "item", code: "fa-hussar-head-maskedsziszak-{metal}"
+		}
+	},
+	{
+		ingredientPattern: "BL,P_",
+		recipeGroup: 2,
+		ingredients: {
+			"B": { type: "item", code: "fa-hussar-head-kapalin-*",  
+						name: "metal", allowedVariants: [
+					"steel",
+					"meteoriciron",
+					"iron"
+				]
+			},
+			"P": { type: "item", code: "game:metalnailsandstrips-*", quantity: 2,
+						name: "metal", allowedVariants: [
+					"steel",
+					"meteoriciron",
+					"iron"
+				]
+			},
+			"L": { type: "item", code: "game:leather-normal-plain"
+			}
+		},
+		width: 2,
+		height: 2,
+		shapeless: true,
+		copyAttributesFrom: 'B',
+		averageDurability: false,
+		name: "greenwich steel plate armet repair",
+		output: { type: "item", code: "fa-hussar-head-kapalin-{metal}"
+		}
+	},
+	{
+		ingredientPattern: "BL,P_",
+		recipeGroup: 2,
+		ingredients: {
+			"B": { type: "item", code: "fa-hussar-head-maskedkapalin-*",  
+						name: "metal", allowedVariants: [
+					"steel",
+					"meteoriciron",
+					"iron"
+				]
+			},
+			"P": { type: "item", code: "game:metalnailsandstrips-*", quantity: 2,
+						name: "metal", allowedVariants: [
+					"steel",
+					"meteoriciron",
+					"iron"
+				]
+			},
+			"L": { type: "item", code: "game:leather-normal-plain"
+			}
+		},
+		width: 2,
+		height: 2,
+		shapeless: true,
+		copyAttributesFrom: 'B',
+		averageDurability: false,
+		name: "greenwich steel plate armet repair",
+		output: { type: "item", code: "fa-hussar-head-maskedkapalin-{metal}"
+		}
+	}
+]

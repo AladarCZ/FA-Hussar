@@ -1,0 +1,11 @@
+[
+	{
+		"file": "fahussar:itemtypes/wearable/hussar/fa-hussar-body",
+		"op": "replace",
+		"path": "/shapeByType",
+		"value": {
+		"*heavy*": { "base": "entity/armor/hussar_co/hussar_heavy_body_co" },
+		"*light*": { "base": "entity/armor/hussar_co/hussar_light_body_co" }
+				}
+	}
+]

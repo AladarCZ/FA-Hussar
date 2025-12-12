@@ -1,0 +1,158 @@
+{
+	"code": "fa-hussar-body",
+	"class": "ItemWearable",
+	"heldTpIdleAnimation": "holdunderarm",
+	"variantgroups": [
+		{ "code": "metalbody",  "states": ["iron", "meteoriciron", "steel"]},
+		{ "code": "type",  "states": ["heavy", "light"]},
+		{ "code": "textile",  "states": ["red","green","black","blue","brown","white","purple","pink","orange","yellow","gray","none","plain"]},
+	],
+	"allowedVariants": [
+		"*"
+	],
+	"shapeByType": 
+	{
+		"*heavy*": { "base": "entity/armor/hussar/hussar_heavy_body" },
+		"*light*": { "base": "entity/armor/hussar/hussar_light_body" },
+	},
+	"texturesByType": {
+		"fa-hussar-body-*heavy*": { 
+			"seraph": { "base": "game:block/transparent" },
+			"hussarbody": { "base": "armor/entity/hussar_{metalbody}" },
+			"textile": { "base": "block/textiles/textile{textile}" }
+				},
+		"fa-hussar-body-steel-light*": { 
+			"seraph": { "base": "game:block/transparent" },
+			"hussarbody": { "base": "armor/entity/hussar_{metalbody}" },
+			"textile": { "base": "block/textiles/textile{textile}" }
+				},
+		"fa-hussar-body-meteoriciron-light*": { 
+			"seraph": { "base": "game:block/transparent" },
+			"hussarbody": { "base": "armor/entity/hussar_{metalbody}" },
+			"textile": { "base": "block/textiles/textile{textile}" }
+				},		
+		"fa-hussar-body-iron-light-none": { 
+			"seraph": { "base": "game:block/transparent" },
+			"hussarbody": { "base": "armor/entity/hussar_{metalbody}" },
+			"textile": { "base": "block/textiles/textile{textile}" }
+				},
+		"fa-hussar-body-iron-light-*": { 
+			"seraph": { "base": "game:block/transparent" },
+			"hussarbody": { "base": "armor/entity/hussar_{metalbody}" },
+			"textile": { "base": "game:block/cloth/linen/{textile}" }
+				}
+	},
+	"storageFlags": 128,
+	"maxstacksize": 4,
+	"attributes": {
+		"visibleDamageEffect": true,
+		"wearableAttachment": true,
+		"clothescategoryByType": {
+			"*": "armorbody",
+		},
+		"footStepSoundByType": {
+			"*heavy*": "game:wearable/plate*",
+			"*light*": "game:wearable/brigandine*"
+		},
+		"defaultProtLoss": {
+			perTierRelativeProtectionLoss: [0.03, 0.15],
+			perTierFlatDamageReductionLoss: [0.1, 0.2],
+		},
+		"protectionModifiersByType": {
+			"*-steel-heavy*": {
+				relativeProtection: 0.97,
+				flatDamageReduction: 1.8,
+				highDamageTierResistant: true,
+				protectionTier: 4
+			},
+			"*-meteoriciron-heavy*": {
+				relativeProtection: 0.962,
+				flatDamageReduction: 1.72,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+			"*-iron-heavy*": {
+				relativeProtection: 0.96,
+				flatDamageReduction: 1.7,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+			"*-steel-light*": {
+				relativeProtection: 0.84,
+				flatDamageReduction: 1.3,
+				highDamageTierResistant: true,
+				protectionTier: 4
+			},
+			"*-meteoriciron-light*": {
+				relativeProtection: 0.825,
+				flatDamageReduction: 1.22,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+			"*-iron-light*": {
+				relativeProtection: 0.82,
+				flatDamageReduction: 1.2,
+				highDamageTierResistant: true,
+				protectionTier: 3
+			},
+		},
+		"statModifiersByType": {
+			"*heavy*": {
+				rangedWeaponsAcc: -0.10,
+				rangedWeaponsSpeed: -0.20,
+				walkSpeed: -0.07,
+				healingeffectivness: -0.26,
+				hungerrate: 0.15
+			},			
+			"*light*": {
+				rangedWeaponsAcc: -0.04,
+				rangedWeaponsSpeed: -0.10,
+				walkSpeed: -0.03,
+				healingeffectivness: -0.13,
+				hungerrate: 0.1
+			},
+		}
+	},
+	"creativeinventory": { "general": ["*"], "items": ["*"], "forgottenarmoryhussar": ["*"] },
+	"renderAlphaTest": 0.25,
+	"durabilityByType": {
+		"*-iron-heavy*": 1900,
+		"*-meteoriciron-heavy*": 2500,
+		"*-steel-heavy*": 5200,
+		"*-iron-light*": 1100,
+		"*-meteoriciron-light*": 1300,
+		"*-steel-light*": 2300
+	},
+	"fpHandTransformByType": {
+		"*": {
+			translation: { x: 0.4, y: -1.2, z: -0.5 },
+			rotation: { x: 163, y: -111, z: -180 },
+			origin: { x: 0.5, y: 1.6, z: 0.5 },
+			scale: 2.15
+		},
+	},
+	"tpHandTransformByType": {
+		"*": {
+			translation: { x: -1, y: -1.9, z: -0.5 },
+			rotation: { x: 97, y: -168, z: 94 },
+			origin: { x: 0.5, y: 1.5, z: 0.5 },
+			scale: 0.67
+		},
+	},
+	"guiTransformByType": {
+		"*": {
+			translation: { x: 3, y: 0, z: 0 },
+			rotation: { x: -26, y: -46, z: -180 },
+			origin: { x: 0.5, y: 1.11, z: 0.5 },
+			scale: 1.37
+		},
+	},
+	"groundTransformByType": {
+		"*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: 0, y: 0, z: 90 },
+			origin: { x: 0.34, y: 1.12, z: 0.5 },
+			scale: 3.1
+		},
+	},
+}

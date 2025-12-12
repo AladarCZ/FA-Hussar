@@ -1,0 +1,140 @@
+[
+	{
+		ingredientPattern: "DBD,FEF,_GI",
+		recipeGroup: 1,
+		ingredients: {
+			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
+			},
+			"D": { type: "item", code: "game:metalplate-steel"
+			},
+			"E": { type: "item", code: "game:armor-head-plate-steel"
+			},
+			"F": { type: "item", code: "game:metalnailsandstrips-gold", quantity: 2
+			},
+			"G": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 100
+			},
+			"I": { type: "item", code: "game:leather-sturdy-plain", quantity: 2
+			}
+		},
+		width: 3,
+		height: 3,
+		name: "hussar steel plate head",
+		output: { type: "item", code: "fa-hussar-head-sziszak-steel"
+		}
+	},
+	{
+		ingredientPattern: "DBD,FEF,_GI",
+		recipeGroup: 1,
+		ingredients: {
+			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
+			},
+			"D": { type: "item", code: "game:metalplate-meteoriciron"
+			},
+			"E": { type: "item", code: "game:armor-head-plate-meteoriciron"
+			},
+			"F": { type: "item", code: "game:metalnailsandstrips-cupronickel", quantity: 2
+			},
+			"G": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 100
+			},
+			"I": { type: "item", code: "game:leather-normal-plain", quantity: 2
+			}
+		},
+		width: 3,
+		height: 3,
+		name: "hussar meteoriciron plate head",
+		output: { type: "item", code: "fa-hussar-head-sziszak-meteoriciron"
+		}
+	},
+	{
+		ingredientPattern: "DBD,FEF,_GI",
+		recipeGroup: 1,
+		ingredients: {
+			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
+			},
+			"D": { type: "item", code: "game:metalplate-iron"
+			},
+			"E": { type: "item", code: "game:armor-head-plate-iron"
+			},
+			"F": { type: "item", code: "game:metalnailsandstrips-blackbronze", quantity: 2
+			},
+			"G": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 100
+			},
+			"I": { type: "item", code: "game:leather-normal-plain", quantity: 2
+			}
+		},
+		width: 3,
+		height: 3,
+		name: "hussar iron plate head",
+		output: { type: "item", code: "fa-hussar-head-sziszak-iron"
+		}
+	},
+	{
+		ingredientPattern: "DBD,FEF,DGI",
+		recipeGroup: 1,
+		ingredients: {
+			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
+			},
+			"D": { type: "item", code: "game:metalplate-steel"
+			},
+			"E": { type: "item", code: "game:armor-head-plate-steel"
+			},
+			"F": { type: "item", code: "game:metalnailsandstrips-gold", quantity: 2
+			},
+			"G": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 100
+			},
+			"I": { type: "item", code: "game:leather-sturdy-plain", quantity: 2
+			}
+		},
+		width: 3,
+		height: 3,
+		name: "hussar steel plate head",
+		output: { type: "item", code: "fa-hussar-head-maskedsziszak-steel"
+		}
+	},
+	{
+		ingredientPattern: "DBD,FEF,DGI",
+		recipeGroup: 1,
+		ingredients: {
+			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
+			},
+			"D": { type: "item", code: "game:metalplate-meteoriciron"
+			},
+			"E": { type: "item", code: "game:armor-head-plate-meteoriciron"
+			},
+			"F": { type: "item", code: "game:metalnailsandstrips-cupronickel", quantity: 2
+			},
+			"G": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 100
+			},
+			"I": { type: "item", code: "game:leather-normal-plain", quantity: 2
+			}
+		},
+		width: 3,
+		height: 3,
+		name: "hussar meteoriciron plate head",
+		output: { type: "item", code: "fa-hussar-head-maskedsziszak-meteoriciron"
+		}
+	},
+	{
+		ingredientPattern: "DBD,FEF,DGI",
+		recipeGroup: 1,
+		ingredients: {
+			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
+			},
+			"D": { type: "item", code: "game:metalplate-iron"
+			},
+			"E": { type: "item", code: "game:armor-head-plate-iron"
+			},
+			"F": { type: "item", code: "game:metalnailsandstrips-blackbronze", quantity: 2
+			},
+			"G": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 100
+			},
+			"I": { type: "item", code: "game:leather-normal-plain", quantity: 2
+			}
+		},
+		width: 3,
+		height: 3,
+		name: "hussar iron plate head",
+		output: { type: "item", code: "fa-hussar-head-maskedsziszak-iron"
+		}
+	}
+]

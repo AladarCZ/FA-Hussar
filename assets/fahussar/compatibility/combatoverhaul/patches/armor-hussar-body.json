@@ -1,0 +1,127 @@
+[
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-body",
+    "op": "addmerge",
+    "path": "/behaviors",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": [
+      {
+        "name": "CombatOverhaul:Armor",
+        "propertiesByType": {
+          "fa-hussar-body-steel-heavy-*": {
+            "Layers": ["Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 8,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.10,
+              "steadyAim": -0.15,
+              "healingeffectivness": -0.05,
+              "hungerrate": 0.15
+            }
+          },
+          "fa-hussar-body-*iron-heavy-*": {
+            "Layers": ["Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 6,
+              "SlashingAttack": 7,
+              "BluntAttack": 5
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.10,
+              "steadyAim": -0.15,
+              "healingeffectivness": -0.05,
+              "hungerrate": 0.15
+            }
+          },
+          "fa-hussar-body-steel-light-*": {
+            "Layers": ["Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 6,
+              "SlashingAttack": 7,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.08,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.10
+            }
+          },
+          "fa-hussar-body-*iron-light-*": {
+            "Layers": ["Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 6,
+              "BluntAttack": 5
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.08,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.10
+            }
+          },
+
+        }
+      }
+    ]
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-body",
+    "op": "replace",
+    "path": "/durabilityByType",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": {
+        "fa-hussar-body-steel-heavy-*": 32000,
+        "fa-hussar-body-meteoriciron-heavy-*": 15800,
+        "fa-hussar-body-iron-heavy-*": 12200,
+        "fa-hussar-body-steel-light-*": 14000,
+        "fa-hussar-body-meteoriciron-light-*": 8000,
+        "fa-hussar-body-iron-light-*": 7000
+    }
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-body",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/protectionModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-body",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/statModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-body",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/class",
+    "value": "CombatOverhaul:WearableArmor"
+  },
+  {
+    "file": "fahussar:itemtypes/wearable/hussar/fa-hussar-body",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "add",
+    "path": "/attributes/materialCountByType",
+    "value": { "*-body-*": 16 }
+  },  
+
+]
