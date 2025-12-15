@@ -121,12 +121,12 @@
 	"creativeinventory": { "general": ["*"], "items": ["*"], "forgottenarmoryhussar": ["*"] },
 	"renderAlphaTest": 0.25,
 	"durabilityByType": {
-		"*szyszak-iron*": 1900,
-		"*szyszak*-meteoriciron*": 2500,
-		"*szyszak*-steel*": 5200,
-		"*kapalin*-iron*": 1600,
-		"*kapalin*-meteoriciron*": 1900,
-		"*kapalin*-steel*": 3100
+		"*iron*heavy*": 1900,
+		"*meteoric*heavy*": 2500,
+		"*steel*heavy*": 5200,
+		"*iron*light*": 1600,
+		"*meteoric*light*": 1900,
+		"*steel*light*": 3100
 	},
 	"fpHandTransformByType": {
 		"*": {
