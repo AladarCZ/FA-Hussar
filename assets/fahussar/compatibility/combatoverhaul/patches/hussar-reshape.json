@@ -4,6 +4,8 @@
 		"op": "replace",
 		"path": "/shapeByType",
 		"value": {
+		"*heavy-*bear*": { "base": "entity/armor/hussar_co/hussar_heavy_bear_body_co" },
+		"*light-*bear*": { "base": "entity/armor/hussar_co/hussar_light_bear_body_co" },
 		"*heavy*": { "base": "entity/armor/hussar_co/hussar_heavy_body_co" },
 		"*light*": { "base": "entity/armor/hussar_co/hussar_light_body_co" }
 				}

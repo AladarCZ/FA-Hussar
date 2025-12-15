@@ -3,8 +3,12 @@
 	"class": "ItemWearable",
 	"heldTpIdleAnimation": "holdunderarm",
 	"variantgroups": [
-		{ "code": "style",  "states": ["sziszak","maskedsziszak", "kapalin", "maskedkapalin"]},
-		{ "code": "metalhead",  "states": ["iron", "meteoriciron", "steel"]}
+		{ "code": "style",  "states": ["szyszak","maskedszyszak", "kapalin", "maskedkapalin"]},
+		{ "code": "metalhead",  "states": ["iron", "meteoriciron", "steel"]},
+		{ "code": "plume",  "states": ["none","bear-black","bear-brown","bear-polar"]}
+	],
+	"behaviors": [
+		{ name: "GroundStorable", properties: { layout: 'Quadrants', collisionBox: { x1: 0, y1: 0, z1: 0, x2: 1, y2: 0.3, z2: 1 } } }
 	],
 	"allowedVariants": [
 		"*"
@@ -13,28 +17,45 @@
 	],
 	"shapeByType": 
 	{
-		"fa-hussar-head-sziszak-*": { "base": "entity/armor/hussar/hussarsziszakhead" },
-		"fa-hussar-head-maskedsziszak-*": { "base": "entity/armor/hussar/hussarmaskedsziszakhead" },
-		"fa-hussar-head-kapalin-*": { "base": "entity/armor/hussar/hussarkapalinhead" },
-		"fa-hussar-head-maskedkapalin-*": { "base": "entity/armor/hussar/hussarmaskedkapalinhead" },
+		"fa-hussar-head-szyszak-*bear*": { "base": "entity/armor/hussar/heavy/hussarszyszakbearhead" },
+		"fa-hussar-head-maskedszyszak-*bear*": { "base": "entity/armor/hussar/heavy/hussarmaskedszyszakbearhead" },
+		"fa-hussar-head-kapalin-*bear*": { "base": "entity/armor/hussar/light/hussarkapalinbearhead" },
+		"fa-hussar-head-maskedkapalin-*bear*": { "base": "entity/armor/hussar/light/hussarmaskedkapalinbearhead" },
+		"fa-hussar-head-szyszak-*": { "base": "entity/armor/hussar/heavy/hussarszyszakhead" },
+		"fa-hussar-head-maskedszyszak-*": { "base": "entity/armor/hussar/heavy/hussarmaskedszyszakhead" },
+		"fa-hussar-head-kapalin-*": { "base": "entity/armor/hussar/light/hussarkapalinhead" },
+		"fa-hussar-head-maskedkapalin-*": { "base": "entity/armor/hussar/light/hussarmaskedkapalinhead" }
 	},
 	"texturesByType": {
-		"fa-hussar-head-*": { 
+		"fa-hussar-head-*bear*": { 
 			"seraph": { "base": "game:block/transparent" },
 			"hussarhead": { "base": "armor/entity/hussar_{metalhead}" },
+			"plume": { "base": "game:entity/humanoid/serapharmor/hide/bear/{plume}" }
+				},
+		"fa-hussar-head-*": { 
+			"seraph": { "base": "game:block/transparent" },
+			"hussarhead": { "base": "armor/entity/hussar_{metalhead}" }
 				}
 	},
 	"storageFlags": 128,
 	"maxstacksize": 4,
 	"attributes": {
+		"handbook": { 
+			"groupBy":["fa-hussar-head-{style}-{metalhead}-*"]
+		},
 		"visibleDamageEffect": true,
 		"wearableAttachment": true,
 		"clothescategoryByType": {
 			"*": "armorhead"
 		},
+		"warmthByType": {
+			"*-bear-black": 1,
+			"*-bear-brown": 1,
+			"*-bear-polar": 1.5
+		},
 		"disableElementsByType": {
 			"*masked*": ["hidehat", "Hood", "hoodupperover", "Hair tile upper part", "ponytailhigh", "ponytaillow", "Hair", "hair-uncovered", "hidefacialhair", "sidehigh", "sidelow", "bangs"],
-			"*-sziszak*": ["hidehat", "Hood", "hoodupperover", "Hair tile upper part", "ponytailhigh", "ponytaillow", "Hair", "hair-uncovered", "sidehigh", "sidelow"],
+			"*-szyszak*": ["hidehat", "Hood", "hoodupperover", "Hair tile upper part", "ponytailhigh", "ponytaillow", "Hair", "hair-uncovered", "sidehigh", "sidelow"],
 			"*-kapalin*": ["hidehat", "Hood", "hoodupperover", "Hair tile upper part", "ponytailhigh", "ponytaillow", "Hair", "hair-uncovered", "sidehigh", "sidelow"]
 		},
 		"defaultProtLoss": {
@@ -42,88 +63,116 @@
 			perTierFlatDamageReductionLoss: [0.1, 0.2]
 		},
 		"protectionModifiersByType": {
-			"*-maskedsziszak-steel*": {
+			"*-maskedszyszak-steel*": {
 				relativeProtection: 0.97,
-				flatDamageReduction: 1.8,
+				flatDamageReduction: 3,
 				highDamageTierResistant: true,
 				protectionTier: 4
 			},
-			"*-sziszak-steel*": {
-				relativeProtection: 0.96,
-				flatDamageReduction: 1.7,
+			"*-szyszak-steel*": {
+				relativeProtection: 0.93,
+				flatDamageReduction: 1.1,
 				highDamageTierResistant: true,
 				protectionTier: 4
 			},
-			"*-maskedsziszak-meteoriciron*": {
-				relativeProtection: 0.962,
-				flatDamageReduction: 1.72,
+			"*-maskedszyszak-meteoriciron*": {
+				relativeProtection: 0.965,
+				flatDamageReduction: 2.9,
 				highDamageTierResistant: true,
 				protectionTier: 3
 			},
-			"*-sziszak-meteoriciron*": {
-				relativeProtection: 0.952,
-				flatDamageReduction: 1.62,
+			"*-szyszak-meteoriciron*": {
+				relativeProtection: 0.925,
+				flatDamageReduction: 1.0,
 				highDamageTierResistant: true,
 				protectionTier: 3
 			},
-			"*-maskedsziszak-iron*": {
+			"*-maskedszyszak-iron*": {
 				relativeProtection: 0.96,
-				flatDamageReduction: 1.7,
+				flatDamageReduction: 2.8,
 				highDamageTierResistant: true,
 				protectionTier: 3
 			},
-			"*-sziszak-iron*": {
-				relativeProtection: 0.95,
-				flatDamageReduction: 1.6,
+			"*-szyszak-iron*": {
+				relativeProtection: 0.92,
+				flatDamageReduction: 0.9,
 				highDamageTierResistant: true,
 				protectionTier: 3
 			},
 			"*-maskedkapalin-steel*": {
-				relativeProtection: 0.84,
-				flatDamageReduction: 1.3,
+				relativeProtection: 0.88,
+				flatDamageReduction: 3,
 				highDamageTierResistant: true,
 				protectionTier: 4
 			},
 			"*-kapalin-steel*": {
-				relativeProtection: 0.74,
-				flatDamageReduction: 1.2,
+				relativeProtection: 0.84,
+				flatDamageReduction: 3,
 				highDamageTierResistant: true,
 				protectionTier: 4
 			},
 			"*-maskedkapalin-meteoriciron*": {
-				relativeProtection: 0.825,
-				flatDamageReduction: 1.22,
+				relativeProtection: 0.87,
+				flatDamageReduction: 2.5,
 				highDamageTierResistant: true,
 				protectionTier: 3
 			},
 			"*-kapalin-meteoriciron*": {
-				relativeProtection: 0.725,
-				flatDamageReduction: 1.12,
+				relativeProtection: 0.83,
+				flatDamageReduction: 2.5,
 				highDamageTierResistant: true,
 				protectionTier: 3
 			},
 			"*-maskedkapalin-iron*": {
-				relativeProtection: 0.82,
-				flatDamageReduction: 1.2,
+				relativeProtection: 0.865,
+				flatDamageReduction: 2,
 				highDamageTierResistant: true,
 				protectionTier: 3
 			},
 			"*-kapalin-iron*": {
-				relativeProtection: 0.72,
-				flatDamageReduction: 1.1,
+				relativeProtection: 0.825,
+				flatDamageReduction: 2,
 				highDamageTierResistant: true,
 				protectionTier: 3
-			},
+			}
 		},
 		"statModifiersByType": {
-			"*-sziszak*": {
+			"*-szyszak-*bear*": {
 				rangedWeaponsAcc: -0.05,
 				rangedWeaponsSpeed: -0.05,
-				walkSpeed: -0.06,
+				walkSpeed: -0.09,
 				healingeffectivness: -0.26,
 				hungerrate: 0.15
 			},	
-			"*-maskedsziszak*": {
+			"*-maskedszyszak-*bear*": {
+				rangedWeaponsAcc: -0.10,
+				rangedWeaponsSpeed: -0.20,
+				walkSpeed: -0.09,
+				healingeffectivness: -0.26,
+				hungerrate: 0.15
+			},			
+			"*-kapalin-*bear*": {
+				rangedWeaponsAcc: -0.02,
+				rangedWeaponsSpeed: -0.04,
+				walkSpeed: -0.06,
+				healingeffectivness: -0.17,
+				hungerrate: 0.12
+			},
+			"*-maskedkapalin-*bear*": {
+				rangedWeaponsAcc: -0.07,
+				rangedWeaponsSpeed: -0.14,
+				walkSpeed: -0.06,
+				healingeffectivness: -0.17,
+				hungerrate: 0.12
+			},
+			"*-szyszak*": {
+				rangedWeaponsAcc: -0.05,
+				rangedWeaponsSpeed: -0.05,
+				walkSpeed: -0.07,
+				healingeffectivness: -0.26,
+				hungerrate: 0.15
+			},	
+			"*-maskedszyszak*": {
 				rangedWeaponsAcc: -0.10,
 				rangedWeaponsSpeed: -0.20,
 				walkSpeed: -0.07,
@@ -131,30 +180,35 @@
 				hungerrate: 0.15
 			},			
 			"*-kapalin*": {
-				rangedWeaponsAcc: -0.01,
-				rangedWeaponsSpeed: -0.03,
-				walkSpeed: -0.02,
-				healingeffectivness: -0.13,
-				hungerrate: 0.1
+				rangedWeaponsAcc: -0.02,
+				rangedWeaponsSpeed: -0.04,
+				walkSpeed: -0.04,
+				healingeffectivness: -0.17,
+				hungerrate: 0.12
 			},
 			"*-maskedkapalin*": {
-				rangedWeaponsAcc: -0.04,
-				rangedWeaponsSpeed: -0.10,
-				walkSpeed: -0.03,
-				healingeffectivness: -0.13,
-				hungerrate: 0.1
-			},
-		}
+				rangedWeaponsAcc: -0.07,
+				rangedWeaponsSpeed: -0.14,
+				walkSpeed: -0.06,
+				healingeffectivness: -0.17,
+				hungerrate: 0.12
+			}
+		},
+    	"groundStorageTransform": {
+      		translation: { x: -1.7, y: -1.31, z: 1.45 },
+      		rotation: { x: 0, y: 39, z: -11 },
+      		origin: { x: 0.5, y: -10, z: 0.5 }
+    	}
 	},
 	"creativeinventory": { "general": ["*"], "items": ["*"], "forgottenarmoryhussar": ["*"] },
 	"renderAlphaTest": 0.25,
 	"durabilityByType": {
-		"*sziszak-iron*": 1900,
-		"*sziszak*-meteoriciron*": 2500,
-		"*sziszak*-steel*": 5200,
-		"*kapalin*-iron*": 1100,
-		"*kapalin*-meteoriciron*": 1300,
-		"*kapalin*-steel*": 2300,
+		"*szyszak-iron*": 1900,
+		"*szyszak*-meteoriciron*": 2500,
+		"*szyszak*-steel*": 5200,
+		"*kapalin*-iron*": 1600,
+		"*kapalin*-meteoriciron*": 1900,
+		"*kapalin*-steel*": 3100
 	},
 	"fpHandTransformByType": {
 		"*": {
@@ -162,7 +216,7 @@
 			rotation: { x: 163, y: -111, z: -180 },
 			origin: { x: 0.5, y: 1.7, z: 0.5 },
 			scale: 2.15
-		},
+		}
 	},
 	"tpHandTransformByType": {
 		"*": {
@@ -178,7 +232,7 @@
 			rotation: { x: -26, y: -46, z: -180 },
 			origin: { x: 0.6, y: 1.72, z: 0.5 },
 			scale: 2
-		},
+		}
 	},
 	"groundTransformByType": {
 		"*": {
@@ -186,6 +240,6 @@
 			rotation: { x: 0, y: 0, z: 0 },
 			origin: { x: 0.34, y: 1.71, z: 0.5 },
 			scale: 3.1
-		},
+		}
 	}
 }

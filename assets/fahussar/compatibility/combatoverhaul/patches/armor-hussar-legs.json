@@ -8,72 +8,140 @@
       {
         "name": "CombatOverhaul:Armor",
         "propertiesByType": {
-          "fa-hussar-legs-steel-heavy-*": {
+          "fa-hussar-legs-steel-heavy-*bear*": {
             "Layers": ["Outer"],
             "Zones": ["Legs", "Feet"],
             "Resists": {
-              "PiercingAttack": 7,
-              "SlashingAttack": 7,
+              "PiercingAttack": 9,
+              "SlashingAttack": 6,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.10,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.06
+            }
+          },
+          "fa-hussar-legs-*iron-heavy-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 5,
               "BluntAttack": 7
             },
             "FlatReduction": {},
             "PlayerStats": {
-              "walkspeed": -0.03,
+              "walkspeed": -0.10,
               "manipulationSpeed": 0,
               "steadyAim": 0,
-              "healingeffectivness": -0.03,
-              "hungerrate": 0.05
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.06
+            }
+          },
+          "fa-hussar-legs-steel-light-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 6,
+              "BluntAttack": 7
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.07,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.03
+            }
+          },
+          "fa-hussar-legs-*iron-light-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 6,
+              "SlashingAttack": 5,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.07,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.03
+            }
+          },
+          "fa-hussar-legs-steel-heavy-*": {
+            "Layers": ["Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 9,
+              "SlashingAttack": 6,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.08,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.06
             }
           },
           "fa-hussar-legs-*iron-heavy-*": {
             "Layers": ["Outer"],
             "Zones": ["Legs", "Feet"],
             "Resists": {
-              "PiercingAttack": 6,
-              "SlashingAttack": 6,
-              "BluntAttack": 6
+              "PiercingAttack": 8,
+              "SlashingAttack": 5,
+              "BluntAttack": 7
             },
             "FlatReduction": {},
             "PlayerStats": {
-              "walkspeed": -0.03,
+              "walkspeed": -0.08,
               "manipulationSpeed": 0,
               "steadyAim": 0,
-              "healingeffectivness": -0.03,
-              "hungerrate": 0.05
-            },
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.06
+            }
           },
           "fa-hussar-legs-steel-light-*": {
             "Layers": ["Outer"],
             "Zones": ["Legs", "Feet"],
             "Resists": {
-              "PiercingAttack": 6,
-              "SlashingAttack": 7,
-              "BluntAttack": 6
+              "PiercingAttack": 7,
+              "SlashingAttack": 6,
+              "BluntAttack": 7
             },
             "FlatReduction": {},
             "PlayerStats": {
-              "walkspeed": -0.02,
+              "walkspeed": -0.05,
               "manipulationSpeed": 0,
               "steadyAim": 0,
-              "healingeffectivness": -0.03,
-              "hungerrate": 0.05
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.03
             }
           },
           "fa-hussar-legs-*iron-light-*": {
             "Layers": ["Outer"],
             "Zones": ["Legs", "Feet"],
             "Resists": {
-              "PiercingAttack": 5,
-              "SlashingAttack": 6,
-              "BluntAttack": 5
+              "PiercingAttack": 6,
+              "SlashingAttack": 5,
+              "BluntAttack": 6
             },
             "FlatReduction": {},
             "PlayerStats": {
-              "walkspeed": -0.02,
+              "walkspeed": -0.05,
               "manipulationSpeed": 0,
               "steadyAim": 0,
-              "healingeffectivness": -0.03,
-              "hungerrate": 0.05
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.03
             }
           }
         }
@@ -89,9 +157,9 @@
         "fa-hussar-legs-steel-heavy-*": 20000,
         "fa-hussar-legs-meteoriciron-heavy-*": 10000,
         "fa-hussar-legs-iron-heavy-*": 8000,
-        "fa-hussar-legs-steel-light-*": 9500,
-        "fa-hussar-legs-meteoriciron-light-*": 5500,
-        "fa-hussar-legs-iron-light-*": 4500,
+        "fa-hussar-legs-steel-light-*": 11400,
+        "fa-hussar-legs-meteoriciron-light-*": 7500,
+        "fa-hussar-legs-iron-light-*": 6500
     }
   },
   {

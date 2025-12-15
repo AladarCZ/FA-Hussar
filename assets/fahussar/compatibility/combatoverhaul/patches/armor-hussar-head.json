@@ -8,143 +8,279 @@
       {
         "name": "CombatOverhaul:Armor",
         "propertiesByType": {
-          "fa-hussar-head-sziszak-steel*": {
+          "fa-hussar-head-szyszak-steel-*bear*": {
             "Layers": ["Outer"],
             "Zones": ["Head", "Neck", "Face"],
             "Resists": {
-              "PiercingAttack": 6,
-              "SlashingAttack": 6,
-              "BluntAttack": 6
+              "PiercingAttack": 8,
+              "SlashingAttack": 5,
+              "BluntAttack": 8
             },
             "FlatReduction": {},
             "PlayerStats": {
-              "walkspeed": 0,
+              "walkspeed": -0.02,
               "manipulationSpeed": 0,
               "steadyAim": -0.05,
-              "healingeffectivness": -0.05,
-              "hungerrate": 0.09
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
             }
           },
-          "fa-hussar-head-maskedsziszak-steel*": {
+          "fa-hussar-head-maskedszyszak-steel-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 9,
+              "SlashingAttack": 6,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": 0,
+              "steadyAim": -0.10,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
+            }
+          },
+          "fa-hussar-head-szyszak-*iron-*bear*": {
             "Layers": ["Outer"],
             "Zones": ["Head", "Neck", "Face"],
             "Resists": {
               "PiercingAttack": 7,
-              "SlashingAttack": 7,
-              "BluntAttack": 6
+              "SlashingAttack": 4,
+              "BluntAttack": 7
             },
             "FlatReduction": {},
             "PlayerStats": {
-              "walkspeed": 0,
+              "walkspeed": -0.02,
               "manipulationSpeed": 0,
-              "steadyAim": -0.15,
-              "healingeffectivness": -0.05,
-              "hungerrate": 0.15
+              "steadyAim": -0.05,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
             }
           },
-          "fa-hussar-head-sziszak-*iron*": {
+          "fa-hussar-head-maskedszyszak-*iron-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 5,
+              "BluntAttack": 7
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": 0,
+              "steadyAim": -0.10,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
+            }
+          },
+          "fa-hussar-head-kapalin-steel-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head","Neck","Face"],
+            "Resists": {
+              "PiercingAttack": 6,
+              "SlashingAttack": 5,
+              "BluntAttack": 7
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.03,
+              "steadyAim": -0.03,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
+            }
+          },
+          "fa-hussar-head-maskedkapalin-steel-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head","Neck","Face"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 6,
+              "BluntAttack": 7
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.10,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
+            }
+          },
+          "fa-hussar-head-kapalin-*iron-*bear*": {
             "Layers": ["Outer"],
             "Zones": ["Head", "Neck", "Face"],
             "Resists": {
               "PiercingAttack": 5,
+              "SlashingAttack": 4,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.03,
+              "steadyAim": -0.03,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
+            }
+          },
+          "fa-hussar-head-maskedkapalin-*iron-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 6,
               "SlashingAttack": 5,
-              "BluntAttack": 5
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.10,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
+            }
+          },
+          "fa-hussar-head-szyszak-steel*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 6,
+              "BluntAttack": 8
             },
             "FlatReduction": {},
             "PlayerStats": {
               "walkspeed": 0,
               "manipulationSpeed": 0,
               "steadyAim": -0.05,
-              "healingeffectivness": -0.05,
-              "hungerrate": 0.09
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
             }
           },
-          "fa-hussar-head-maskedsziszak-*iron*": {
+          "fa-hussar-head-maskedszyszak-steel*": {
             "Layers": ["Outer"],
             "Zones": ["Head", "Neck", "Face"],
             "Resists": {
-              "PiercingAttack": 6,
-              "SlashingAttack": 6,
-              "BluntAttack": 5
+              "PiercingAttack": 9,
+              "SlashingAttack": 7,
+              "BluntAttack": 8
             },
             "FlatReduction": {},
             "PlayerStats": {
               "walkspeed": 0,
               "manipulationSpeed": 0,
-              "steadyAim": -0.15,
-              "healingeffectivness": -0.05,
-              "hungerrate": 0.15
+              "steadyAim": -0.10,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
+            }
+          },
+          "fa-hussar-head-szyszak-*iron*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 5,
+              "BluntAttack": 7
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": 0,
+              "steadyAim": -0.05,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
+            }
+          },
+          "fa-hussar-head-maskedszyszak-*iron*": {
+            "Layers": ["Outer"],
+            "Zones": ["Head", "Neck", "Face"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 6,
+              "BluntAttack": 7
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": 0,
+              "steadyAim": -0.10,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
             }
           },
           "fa-hussar-head-kapalin-steel*": {
             "Layers": ["Outer"],
             "Zones": ["Head","Neck","Face"],
             "Resists": {
-              "PiercingAttack": 5,
-              "SlashingAttack": 6,
-              "BluntAttack": 5
+              "PiercingAttack": 6,
+              "SlashingAttack": 5,
+              "BluntAttack": 7
             },
             "FlatReduction": {},
             "PlayerStats": {
               "walkspeed": 0,
-              "manipulationSpeed": 0,
+              "manipulationSpeed": -0.03,
               "steadyAim": -0.03,
-              "healingeffectivness": -0.05,
-              "hungerrate": 0.05
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
             }
           },
           "fa-hussar-head-maskedkapalin-steel*": {
             "Layers": ["Outer"],
             "Zones": ["Head","Neck","Face"],
             "Resists": {
-              "PiercingAttack": 6,
-              "SlashingAttack": 7,
-              "BluntAttack": 5
+              "PiercingAttack": 7,
+              "SlashingAttack": 6,
+              "BluntAttack": 7
             },
             "FlatReduction": {},
             "PlayerStats": {
               "walkspeed": 0,
-              "manipulationSpeed": 0,
+              "manipulationSpeed": -0.05,
               "steadyAim": -0.10,
-              "healingeffectivness": -0.05,
-              "hungerrate": 0.10
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
             }
           },
           "fa-hussar-head-kapalin-*iron*": {
             "Layers": ["Outer"],
             "Zones": ["Head", "Neck", "Face"],
             "Resists": {
-              "PiercingAttack": 4,
-              "SlashingAttack": 5,
-              "BluntAttack": 4
+              "PiercingAttack": 5,
+              "SlashingAttack": 4,
+              "BluntAttack": 6
             },
             "FlatReduction": {},
             "PlayerStats": {
               "walkspeed": 0,
-              "manipulationSpeed": 0,
+              "manipulationSpeed": -0.03,
               "steadyAim": -0.03,
-              "healingeffectivness": -0.05,
-              "hungerrate": 0.05
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
             }
           },
           "fa-hussar-head-maskedkapalin-*iron*": {
             "Layers": ["Outer"],
             "Zones": ["Head", "Neck", "Face"],
             "Resists": {
-              "PiercingAttack": 5,
-              "SlashingAttack": 6,
-              "BluntAttack": 4
+              "PiercingAttack": 6,
+              "SlashingAttack": 5,
+              "BluntAttack": 6
             },
             "FlatReduction": {},
             "PlayerStats": {
               "walkspeed": 0,
-              "manipulationSpeed": 0,
+              "manipulationSpeed": -0.05,
               "steadyAim": -0.10,
-              "healingeffectivness": -0.05,
-              "hungerrate": 0.10
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
             }
           }
-        },
+        }
       }
     ]
   },
@@ -154,12 +290,12 @@
     "path": "/durabilityByType",
     "dependsOn": [{ "modId": "combatoverhaul" }],
     "value": {
-        "fa-hussar-head-*sziszak-steel*": 10000,
-        "fa-hussar-head-*sziszak-meteoriciron*": 5000,
-        "fa-hussar-head-*sziszak-iron*": 4000,
-        "fa-hussar-head-*kapalin-steel*": 4800,
-        "fa-hussar-head-*kapalin-meteoriciron*": 2500,
-        "fa-hussar-head-*kapalin-iron*": 2200
+        "fa-hussar-head-*szyszak-steel*": 9000,
+        "fa-hussar-head-*szyszak-meteoriciron*": 5000,
+        "fa-hussar-head-*szyszak-iron*": 4000,
+        "fa-hussar-head-*kapalin-steel*": 6700,
+        "fa-hussar-head-*kapalin-meteoriciron*": 3500,
+        "fa-hussar-head-*kapalin-iron*": 2800
     }
   },
   {

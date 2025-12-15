@@ -16,7 +16,11 @@
 					"brown",
 					"gray",
 					"black",
-					"white"
+					"white",
+					"none",
+					"bear-black",
+					"bear-brown",
+					"bear-polar"
 				]
 			},
 			"P": { type: "item", code: "game:metalplate-steel"
@@ -50,7 +54,11 @@
 					"brown",
 					"gray",
 					"black",
-					"white"
+					"white",
+					"none",
+					"bear-black",
+					"bear-brown",
+					"bear-polar"
 				]
 			},
 			"P": { type: "item", code: "game:metalplate-meteoriciron"
@@ -84,7 +92,11 @@
 					"brown",
 					"gray",
 					"black",
-					"white"
+					"white",
+					"none",
+					"bear-black",
+					"bear-brown",
+					"bear-polar"
 				]
 			},
 			"P": { type: "item", code: "game:metalplate-iron"
@@ -118,7 +130,11 @@
 					"brown",
 					"gray",
 					"black",
-					"white"
+					"white",
+					"none",
+					"bear-black",
+					"bear-brown",
+					"bear-polar"
 				]
 			},
 			"P": { type: "item", code: "game:metalplate-steel"
@@ -152,7 +168,11 @@
 					"brown",
 					"gray",
 					"black",
-					"white"
+					"white",
+					"none",
+					"bear-black",
+					"bear-brown",
+					"bear-polar"
 				]
 			},
 			"P": { type: "item", code: "game:metalplate-meteoriciron"
@@ -186,7 +206,11 @@
 					"brown",
 					"gray",
 					"black",
-					"white"
+					"white",
+					"none",
+					"bear-black",
+					"bear-brown",
+					"bear-polar"
 				]
 			},
 			"P": { type: "item", code: "game:metalplate-iron"
@@ -202,65 +226,5 @@
 		name: "Templar Legs Heavy Repair",
 		output: { type: "item", code: "fa-hussar-legs-iron-heavy-{color}"
 		}
-	},
-		{
-		ingredientPattern: "BL,P_",
-		recipeGroup: 2,
-		ingredients: {
-			"B": { type: "item", code: "fa-hussar-legs-*-heavy-none",  
-						name: "metal", allowedVariants: [
-					"steel",
-					"meteoriciron",
-					"iron"
-				]
-			},
-			"P": { type: "item", code: "game:metalplate-*",
-						name: "metal", allowedVariants: [
-					"steel",
-					"meteoriciron",
-					"iron"
-				]
-			},
-			"L": { type: "item", code: "game:leather-normal-plain"
-			}
-		},
-		width: 2,
-		height: 2,
-		shapeless: true,
-		copyAttributesFrom: 'B',
-		averageDurability: false,
-		name: "Templar Legs Heavy Repair",
-		output: { type: "item", code: "fa-hussar-legs-{metal}-heavy-none"
-		}
-	},
-	{
-		ingredientPattern: "BL,P_",
-		recipeGroup: 2,
-		ingredients: {
-			"B": { type: "item", code: "fa-hussar-body-*-heavy-none",  
-						name: "metal", allowedVariants: [
-					"steel",
-					"meteoriciron",
-					"iron"
-				]
-			},
-			"P": { type: "item", code: "game:metalplate-*",
-						name: "metal", allowedVariants: [
-					"steel",
-					"meteoriciron",
-					"iron"
-				]
-			},
-			"L": { type: "item", code: "game:leather-normal-plain"
-			}
-		},
-		width: 2,
-		height: 2,
-		shapeless: true,
-		copyAttributesFrom: 'B',
-		averageDurability: false,
-		name: "Templar Legs light Repair",
-		output: { type: "item", code: "fa-hussar-body-{metal}-heavy-none"
-		}
-	},
+	}
 ]

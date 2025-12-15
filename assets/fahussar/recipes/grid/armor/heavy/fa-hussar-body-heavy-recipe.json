@@ -111,8 +111,98 @@
 		},
 		width: 3,
 		height: 3,
-		name: "hussar iron plate body",
+		name: " ",
 		output: { type: "item", code: "fa-hussar-body-{metal}-heavy-{color}"
 		}
 	},
+	{
+		ingredientPattern: "AE,BG",
+		recipeGroup: 1,
+		ingredients: {
+			"A": { type: "item", 
+					code: "game:armor-body-hide-bear-*",
+					name: "bear",
+					allowedVariants: [
+					"black",
+					"brown",
+					"polar"
+				]
+			},
+			"E": { type: "item", 
+					code: "fa-hussar-body-*-heavy-none",
+					name: "metal",
+					allowedVariants: [
+					"iron",
+					"meteoriciron",
+					"steel"
+				]
+			},
+			"G": { type: "item", code: "game:shears-*", isTool: true, toolDurabilityCost: 100
+			},
+			"B": { type: "item", code: "game:hammer-*", isTool: true, toolDurabilityCost: 100
+			}
+		},
+		width: 2,
+		height: 2,
+		name: " ",
+		output: { type: "item", code: "fa-hussar-body-{metal}-heavy-bear-{bear}"
+		}
+	},
+	{
+		ingredientPattern: "BCD,_A_",
+		recipeGroup: 1,
+		ingredients: {
+			"A": { type: "item", code: "fa-hussar-body-steel-*heavy*"
+			},
+			"B": { type: "item", code: "game:wrench-*", isTool: true, toolDurabilityCost: 100
+			},
+			"C": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 100
+			},
+			"D": { type: "item", code: "game:shears-*", isTool: true, toolDurabilityCost: 100
+			},
+		},
+		width: 3,
+		height: 2,
+		name: "hussar steel plate sallet deplume",
+		output: { type: "item", code: "fa-hussar-body-steel-heavy-none"
+		}
+	},
+	{
+		ingredientPattern: "BCD,_A_",
+		recipeGroup: 1,
+		ingredients: {
+			"A": { type: "item", code: "fa-hussar-body-meteoriciron-*heavy*"
+			},
+			"B": { type: "item", code: "game:wrench-*", isTool: true, toolDurabilityCost: 100
+			},
+			"C": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 100
+			},
+			"D": { type: "item", code: "game:shears-*", isTool: true, toolDurabilityCost: 100
+			},
+		},
+		width: 3,
+		height: 2,
+		name: "hussar steel plate sallet deplume",
+		output: { type: "item", code: "fa-hussar-body-meteoriciron-heavy-none"
+		}
+	},
+	{
+		ingredientPattern: "BCD,_A_",
+		recipeGroup: 1,
+		ingredients: {
+			"A": { type: "item", code: "fa-hussar-body-iron-*heavy*"
+			},
+			"B": { type: "item", code: "game:wrench-*", isTool: true, toolDurabilityCost: 100
+			},
+			"C": { type: "item", code: "game:saw-*", isTool: true, toolDurabilityCost: 100
+			},
+			"D": { type: "item", code: "game:shears-*", isTool: true, toolDurabilityCost: 100
+			},
+		},
+		width: 3,
+		height: 2,
+		name: "hussar steel plate sallet deplume",
+		output: { type: "item", code: "fa-hussar-body-iron-heavy-none"
+		}
+	}
 ]

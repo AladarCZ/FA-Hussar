@@ -8,75 +8,142 @@
       {
         "name": "CombatOverhaul:Armor",
         "propertiesByType": {
-          "fa-hussar-body-steel-heavy-*": {
+          "fa-hussar-body-steel-heavy-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 9,
+              "SlashingAttack": 6,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.04,
+              "manipulationSpeed": -0.12,
+              "steadyAim": -0.20,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
+            }
+          },
+          "fa-hussar-body-*iron-heavy-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 5,
+              "BluntAttack": 7
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.04,
+              "manipulationSpeed": -0.12,
+              "steadyAim": -0.20,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
+            }
+          },
+          "fa-hussar-body-steel-light-*bear*": {
             "Layers": ["Outer"],
             "Zones": ["Torso", "Arms", "Hands"],
             "Resists": {
               "PiercingAttack": 7,
-              "SlashingAttack": 8,
+              "SlashingAttack": 6,
+              "BluntAttack": 7
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": -0.12,
+              "steadyAim": -0.18,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
+            }
+          },
+          "fa-hussar-body-*iron-light-*bear*": {
+            "Layers": ["Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 6,
+              "SlashingAttack": 5,
               "BluntAttack": 6
             },
             "FlatReduction": {},
             "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": -0.12,
+              "steadyAim": -0.18,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
+            }
+          },
+          "fa-hussar-body-steel-heavy-*": {
+            "Layers": ["Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 9,
+              "SlashingAttack": 6,
+              "BluntAttack": 8
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
               "walkspeed": -0.02,
-              "manipulationSpeed": -0.10,
-              "steadyAim": -0.15,
-              "healingeffectivness": -0.05,
-              "hungerrate": 0.15
+              "manipulationSpeed": -0.12,
+              "steadyAim": -0.20,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
             }
           },
           "fa-hussar-body-*iron-heavy-*": {
             "Layers": ["Outer"],
             "Zones": ["Torso", "Arms", "Hands"],
             "Resists": {
-              "PiercingAttack": 6,
-              "SlashingAttack": 7,
-              "BluntAttack": 5
+              "PiercingAttack": 8,
+              "SlashingAttack": 5,
+              "BluntAttack": 7
             },
             "FlatReduction": {},
             "PlayerStats": {
               "walkspeed": -0.02,
-              "manipulationSpeed": -0.10,
-              "steadyAim": -0.15,
-              "healingeffectivness": -0.05,
-              "hungerrate": 0.15
+              "manipulationSpeed": -0.12,
+              "steadyAim": -0.20,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
             }
           },
           "fa-hussar-body-steel-light-*": {
             "Layers": ["Outer"],
             "Zones": ["Torso", "Arms", "Hands"],
             "Resists": {
-              "PiercingAttack": 6,
-              "SlashingAttack": 7,
-              "BluntAttack": 6
+              "PiercingAttack": 7,
+              "SlashingAttack": 6,
+              "BluntAttack": 7
             },
             "FlatReduction": {},
             "PlayerStats": {
-              "walkspeed": -0.01,
-              "manipulationSpeed": -0.05,
-              "steadyAim": -0.08,
-              "healingeffectivness": -0.03,
-              "hungerrate": 0.10
+              "walkspeed": -0.03,
+              "manipulationSpeed": -0.12,
+              "steadyAim": -0.18,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
             }
           },
           "fa-hussar-body-*iron-light-*": {
             "Layers": ["Outer"],
             "Zones": ["Torso", "Arms", "Hands"],
             "Resists": {
-              "PiercingAttack": 5,
-              "SlashingAttack": 6,
-              "BluntAttack": 5
+              "PiercingAttack": 6,
+              "SlashingAttack": 5,
+              "BluntAttack": 6
             },
             "FlatReduction": {},
             "PlayerStats": {
-              "walkspeed": -0.01,
-              "manipulationSpeed": -0.05,
-              "steadyAim": -0.08,
-              "healingeffectivness": -0.03,
-              "hungerrate": 0.10
+              "walkspeed": -0.03,
+              "manipulationSpeed": -0.12,
+              "steadyAim": -0.18,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.07
             }
-          },
-
+          }
         }
       }
     ]
@@ -87,12 +154,12 @@
     "path": "/durabilityByType",
     "dependsOn": [{ "modId": "combatoverhaul" }],
     "value": {
-        "fa-hussar-body-steel-heavy-*": 32000,
-        "fa-hussar-body-meteoriciron-heavy-*": 15800,
-        "fa-hussar-body-iron-heavy-*": 12200,
-        "fa-hussar-body-steel-light-*": 14000,
-        "fa-hussar-body-meteoriciron-light-*": 8000,
-        "fa-hussar-body-iron-light-*": 7000
+        "fa-hussar-body-steel-heavy-*": 31000,
+        "fa-hussar-body-meteoriciron-heavy-*": 14800,
+        "fa-hussar-body-iron-heavy-*": 11200,
+        "fa-hussar-body-steel-light-*": 16600,
+        "fa-hussar-body-meteoriciron-light-*": 10000,
+        "fa-hussar-body-iron-light-*": 8500
     }
   },
   {

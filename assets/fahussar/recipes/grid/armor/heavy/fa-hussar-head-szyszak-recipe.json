@@ -1,13 +1,13 @@
 [
 	{
-		ingredientPattern: "IDI,FEF,_GB",
+		ingredientPattern: "DBD,FEF,_GI",
 		recipeGroup: 1,
 		ingredients: {
 			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
 			},
 			"D": { type: "item", code: "game:metalplate-steel"
 			},
-			"E": { type: "item", code: "game:armor-head-brigandine-steel"
+			"E": { type: "item", code: "game:armor-head-plate-steel"
 			},
 			"F": { type: "item", code: "game:metalnailsandstrips-gold", quantity: 2
 			},
@@ -19,18 +19,18 @@
 		width: 3,
 		height: 3,
 		name: "hussar steel plate head",
-		output: { type: "item", code: "fa-hussar-head-kapalin-steel-none"
+		output: { type: "item", code: "fa-hussar-head-szyszak-steel-none"
 		}
 	},
 	{
-		ingredientPattern: "IDI,FEF,_GB",
+		ingredientPattern: "DBD,FEF,_GI",
 		recipeGroup: 1,
 		ingredients: {
 			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
 			},
 			"D": { type: "item", code: "game:metalplate-meteoriciron"
 			},
-			"E": { type: "item", code: "game:armor-head-brigandine-meteoriciron"
+			"E": { type: "item", code: "game:armor-head-plate-meteoriciron"
 			},
 			"F": { type: "item", code: "game:metalnailsandstrips-cupronickel", quantity: 2
 			},
@@ -42,18 +42,18 @@
 		width: 3,
 		height: 3,
 		name: "hussar meteoriciron plate head",
-		output: { type: "item", code: "fa-hussar-head-kapalin-meteoriciron-none"
+		output: { type: "item", code: "fa-hussar-head-szyszak-meteoriciron-none"
 		}
 	},
 	{
-		ingredientPattern: "IDI,FEF,_GB",
+		ingredientPattern: "DBD,FEF,_GI",
 		recipeGroup: 1,
 		ingredients: {
 			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
 			},
 			"D": { type: "item", code: "game:metalplate-iron"
 			},
-			"E": { type: "item", code: "game:armor-head-brigandine-iron"
+			"E": { type: "item", code: "game:armor-head-plate-iron"
 			},
 			"F": { type: "item", code: "game:metalnailsandstrips-blackbronze", quantity: 2
 			},
@@ -65,18 +65,18 @@
 		width: 3,
 		height: 3,
 		name: "hussar iron plate head",
-		output: { type: "item", code: "fa-hussar-head-kapalin-iron-none"
+		output: { type: "item", code: "fa-hussar-head-szyszak-iron-none"
 		}
 	},
 	{
-		ingredientPattern: "IDI,FEF,DGB",
+		ingredientPattern: "DBD,FEF,DGI",
 		recipeGroup: 1,
 		ingredients: {
 			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
 			},
 			"D": { type: "item", code: "game:metalplate-steel"
 			},
-			"E": { type: "item", code: "game:armor-head-brigandine-steel"
+			"E": { type: "item", code: "game:armor-head-plate-steel"
 			},
 			"F": { type: "item", code: "game:metalnailsandstrips-gold", quantity: 2
 			},
@@ -88,18 +88,18 @@
 		width: 3,
 		height: 3,
 		name: "hussar steel plate head",
-		output: { type: "item", code: "fa-hussar-head-maskedkapalin-steel-none"
+		output: { type: "item", code: "fa-hussar-head-maskedszyszak-steel-none"
 		}
 	},
 	{
-		ingredientPattern: "IDI,FEF,DGB",
+		ingredientPattern: "DBD,FEF,DGI",
 		recipeGroup: 1,
 		ingredients: {
 			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
 			},
 			"D": { type: "item", code: "game:metalplate-meteoriciron"
 			},
-			"E": { type: "item", code: "game:armor-head-brigandine-meteoriciron"
+			"E": { type: "item", code: "game:armor-head-plate-meteoriciron"
 			},
 			"F": { type: "item", code: "game:metalnailsandstrips-cupronickel", quantity: 2
 			},
@@ -111,18 +111,18 @@
 		width: 3,
 		height: 3,
 		name: "hussar meteoriciron plate head",
-		output: { type: "item", code: "fa-hussar-head-maskedkapalin-meteoriciron-none"
+		output: { type: "item", code: "fa-hussar-head-maskedszyszak-meteoriciron-none"
 		}
 	},
 	{
-		ingredientPattern: "IDI,FEF,DGB",
+		ingredientPattern: "DBD,FEF,DGI",
 		recipeGroup: 1,
 		ingredients: {
 			"B": { type: "item", code: "fa-hussar-schematic", returnedStack: { "type": "item", "code": "fa-hussar-schematic" }
 			},
 			"D": { type: "item", code: "game:metalplate-iron"
 			},
-			"E": { type: "item", code: "game:armor-head-brigandine-iron"
+			"E": { type: "item", code: "game:armor-head-plate-iron"
 			},
 			"F": { type: "item", code: "game:metalnailsandstrips-blackbronze", quantity: 2
 			},
@@ -134,7 +134,7 @@
 		width: 3,
 		height: 3,
 		name: "hussar iron plate head",
-		output: { type: "item", code: "fa-hussar-head-maskedkapalin-iron-none"
+		output: { type: "item", code: "fa-hussar-head-maskedszyszak-iron-none"
 		}
 	},
 	{
@@ -151,7 +151,7 @@
 				]
 			},
 			"E": { type: "item", 
-					code: "fa-hussar-head-kapalin-*-none",
+					code: "fa-hussar-head-szyszak-*-none",
 					name: "metal",
 					allowedVariants: [
 					"iron",
@@ -166,8 +166,8 @@
 		},
 		width: 2,
 		height: 2,
-		name: "gothi plate kapalin",
-		output: { type: "item", code: "fa-hussar-head-kapalin-{metal}-bear-{bear}"
+		name: "gothi plate szyszak",
+		output: { type: "item", code: "fa-hussar-head-szyszak-{metal}-bear-{bear}"
 		}
 	},
 	{
@@ -184,7 +184,7 @@
 				]
 			},
 			"E": { type: "item", 
-					code: "fa-hussar-head-maskedkapalin-*-none",
+					code: "fa-hussar-head-maskedszyszak-*-none",
 					name: "metal",
 					allowedVariants: [
 					"iron",
@@ -199,15 +199,15 @@
 		},
 		width: 2,
 		height: 2,
-		name: "gothi plate maskedkapalin",
-		output: { type: "item", code: "fa-hussar-head-maskedkapalin-{metal}-bear-{bear}"
+		name: "gothi plate maskedszyszak",
+		output: { type: "item", code: "fa-hussar-head-maskedszyszak-{metal}-bear-{bear}"
 		}
 	},
 	{
 		ingredientPattern: "BCD,_A_",
 		recipeGroup: 1,
 		ingredients: {
-			"A": { type: "item", code: "fa-hussar-head-*kapalin*-steel-*"
+			"A": { type: "item", code: "fa-hussar-head-*szyszak*-steel-*"
 			},
 			"B": { type: "item", code: "game:wrench-*", isTool: true, toolDurabilityCost: 100
 			},
@@ -218,15 +218,15 @@
 		},
 		width: 3,
 		height: 2,
-		name: "hussar steel plate kapalin deplume",
-		output: { type: "item", code: "fa-hussar-head-kapalin-steel-none"
+		name: "hussar steel plate szyszak deplume",
+		output: { type: "item", code: "fa-hussar-head-szyszak-steel-none"
 		}
 	},
 	{
 		ingredientPattern: "BCD,_A_",
 		recipeGroup: 1,
 		ingredients: {
-			"A": { type: "item", code: "fa-hussar-head-*kapalin*-meteoriciron-*"
+			"A": { type: "item", code: "fa-hussar-head-*szyszak*-meteoriciron-*"
 			},
 			"B": { type: "item", code: "game:wrench-*", isTool: true, toolDurabilityCost: 100
 			},
@@ -237,15 +237,15 @@
 		},
 		width: 3,
 		height: 2,
-		name: "hussar meteoriciron plate kapalin deplume",
-		output: { type: "item", code: "fa-hussar-head-kapalin-meteoriciron-none"
+		name: "hussar meteoriciron plate szyszak deplume",
+		output: { type: "item", code: "fa-hussar-head-szyszak-meteoriciron-none"
 		}
 	},
 	{
 		ingredientPattern: "BCD,_A_",
 		recipeGroup: 1,
 		ingredients: {
-			"A": { type: "item", code: "fa-hussar-head-*kapalin*-iron-*"
+			"A": { type: "item", code: "fa-hussar-head-*szyszak*-iron-*"
 			},
 			"B": { type: "item", code: "game:wrench-*", isTool: true, toolDurabilityCost: 100
 			},
@@ -256,8 +256,8 @@
 		},
 		width: 3,
 		height: 2,
-		name: "hussar meteoriciron plate kapalin deplume",
-		output: { type: "item", code: "fa-hussar-head-kapalin-iron-none"
+		name: "hussar meteoriciron plate szyszak deplume",
+		output: { type: "item", code: "fa-hussar-head-szyszak-iron-none"
 		}
 	}
 ]

@@ -16,7 +16,11 @@
 					"brown",
 					"gray",
 					"black",
-					"white"
+					"white",
+					"none",
+					"bear-black",
+					"bear-brown",
+					"bear-polar"
 				]
 			},
 			"P": { type: "item", code: "game:metalnailsandstrips-steel", quantity: 4,
@@ -50,7 +54,11 @@
 					"brown",
 					"gray",
 					"black",
-					"white"
+					"white",
+					"none",
+					"bear-black",
+					"bear-brown",
+					"bear-polar"
 				]
 			},
 			"P": { type: "item", code: "game:metalnailsandstrips-meteoriciron", quantity: 4,
@@ -84,7 +92,11 @@
 					"brown",
 					"gray",
 					"black",
-					"white"
+					"white",
+					"none",
+					"bear-black",
+					"bear-brown",
+					"bear-polar"
 				]
 			},
 			"P": { type: "item", code: "game:metalnailsandstrips-iron", quantity: 4,
@@ -118,7 +130,11 @@
 					"brown",
 					"gray",
 					"black",
-					"white"
+					"white",
+					"none",
+					"bear-black",
+					"bear-brown",
+					"bear-polar"
 				]
 			},
 			"P": { type: "item", code: "game:metalnailsandstrips-steel", quantity: 4,
@@ -152,7 +168,11 @@
 					"brown",
 					"gray",
 					"black",
-					"white"
+					"white",
+					"none",
+					"bear-black",
+					"bear-brown",
+					"bear-polar"
 				]
 			},
 			"P": { type: "item", code: "game:metalnailsandstrips-meteoriciron", quantity: 4,
@@ -186,7 +206,11 @@
 					"brown",
 					"gray",
 					"black",
-					"white"
+					"white",
+					"none",
+					"bear-black",
+					"bear-brown",
+					"bear-polar"
 				]
 			},
 			"P": { type: "item", code: "game:metalnailsandstrips-iron", quantity: 4,
@@ -201,66 +225,6 @@
 		averageDurability: false,
 		name: "Templar Legs light Repair",
 		output: { type: "item", code: "fa-hussar-legs-iron-light-{color}"
-		}
-	},
-		{
-		ingredientPattern: "BL,P_",
-		recipeGroup: 2,
-		ingredients: {
-			"B": { type: "item", code: "fa-hussar-legs-*-light-none",  
-						name: "metal", allowedVariants: [
-					"steel",
-					"meteoriciron",
-					"iron"
-				]
-			},
-			"P": { type: "item", code: "game:metalnailsandstrips-*", quantity: 4,
-						name: "metal", allowedVariants: [
-					"steel",
-					"meteoriciron",
-					"iron"
-				]
-			},
-			"L": { type: "item", code: "game:leather-normal-plain"
-			}
-		},
-		width: 2,
-		height: 2,
-		shapeless: true,
-		copyAttributesFrom: 'B',
-		averageDurability: false,
-		name: "Templar Legs light Repair",
-		output: { type: "item", code: "fa-hussar-legs-{metal}-light-none"
-		}
-	},
-		{
-		ingredientPattern: "BL,P_",
-		recipeGroup: 2,
-		ingredients: {
-			"B": { type: "item", code: "fa-hussar-body-*-light-none",  
-						name: "metal", allowedVariants: [
-					"steel",
-					"meteoriciron",
-					"iron"
-				]
-			},
-			"P": { type: "item", code: "game:metalnailsandstrips-*", quantity: 4,
-						name: "metal", allowedVariants: [
-					"steel",
-					"meteoriciron",
-					"iron"
-				]
-			},
-			"L": { type: "item", code: "game:leather-normal-plain"
-			}
-		},
-		width: 2,
-		height: 2,
-		shapeless: true,
-		copyAttributesFrom: 'B',
-		averageDurability: false,
-		name: "Templar Legs light Repair",
-		output: { type: "item", code: "fa-hussar-body-{metal}-light-none"
 		}
 	},
 ]
